@@ -1,38 +1,133 @@
-.App {
+body {
+  background-color: rgba(255, 240, 231, 0.347);
+  height: 1vh;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: 1fr 900px 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 20px;
+  margin-top: 50px;
+}
+
+nav {
+  /* grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2; */
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  height: 4rem;
+  padding-top: 5px;
+  border-bottom: 1px solid lightgray;
+  box-shadow: lightgray;
+}
+
+nav h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  color: rgb(255, 115, 0);
+}
+
+nav img {
+  float: left;
+  width: 90px;
+  height: auto;
+  margin: 0;
+  top: 0;
+}
+
+.startcontainer{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 15px;
+}
+
+.startcontainer h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.startcontainer img{
+  width: 150px;
+  position: relative;
+  float: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.log-sign {
+  background-color: rgba(255, 240, 231, 0.347);
+  width: 100%;
+  margin-left: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  background-color: rgb(255, 115, 0);
+  border-radius: 20px;
+  border: none;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.feed {
+  grid-column-start: 2;
+  text-align: center;
+}
+
+.tweet{
+  border: 1px solid lightgray;
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.tweets{
+  text-align: left;
+}
+
+.handle{
+  color: rgb(255, 115, 0);
+}
+
+.handle strong {
+  color: black !important;
+}
+
+.avatar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.avatar img {
+  width: 80px;
+  margin: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.avatar img:hover {
+  width: 90px;
+  margin: 2.5px
+}
+
+#av1 {
+  width: 80px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio]:checked + img {
+  width: 90px;
+  margin: 2.5px
+}
+
+.tweet img {
+  width: 40px;
+}
+
+footer {
+  background-color: rgb(76, 76, 76);
+}
+
+footer p {
+  margin-bottom: 0;
 }
