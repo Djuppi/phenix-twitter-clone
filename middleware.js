@@ -1,4 +1,4 @@
-const secret = 'hemmeligsecret';
+const secret = process.env.SECRET;
 const jwt = require('jsonwebtoken');
 
 const authenticate = (req, res, next) => {
